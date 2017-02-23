@@ -23,7 +23,17 @@ id | name |
 # - Then do the has_many
 # - If there is a many to many, we need a third table
 
-# Write your answer here.
+#reviews
+pkey_id | content | restaurant_id | customer_id
+
+#restaurants
+pkey_id | name
+
+#customers
+pkey_id | name
+
+#restaurant_customer
+restaurant_id | customer_id
 
 # 2. As a second step, please fill in the stubbed out methods in the respective model.
 # Customer#reviews
