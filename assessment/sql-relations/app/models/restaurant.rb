@@ -17,7 +17,7 @@ class Restaurant
       SELECT * FROM owners
       INNER JOIN restaurants
       ON restaurants.owner_id = owners.id
-      WHERE restaurants.name = ?
+      WHERE restaurants.id = ?
     SQL
     self.class.db.execute(sql, self.id)
   end
