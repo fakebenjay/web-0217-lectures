@@ -39,6 +39,7 @@ class UsersController < ApplicationController
     @user = User.find(params)
     @user.update(new_params)
     @user.save
+#     not the best sign here.
     redirect to "/#{@pet.id}"
   end
 
